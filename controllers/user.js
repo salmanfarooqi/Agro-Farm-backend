@@ -242,7 +242,7 @@ const  deletUser=async(req,res)=>{
 
 
 
-module.exports = { buyerSignup, adminSignup, investerSignup, BuyerLogin, adminLogin, investerLogin,getAllUser,forgotPassword };
+module.exports = { buyerSignup, adminSignup, investerSignup, BuyerLogin, adminLogin, investerLogin,getAllUser,forgotPassword,deletUser };
 
 
 

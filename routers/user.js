@@ -1,6 +1,6 @@
 const express = require('express');
 const userRouter = express.Router();
-const { buyerSignup, adminSignup, investerSignup, BuyerLogin, adminLogin, investerLogin, getAllUser, forgotPassword } = require('../controllers/user')
+const { buyerSignup, adminSignup, investerSignup, BuyerLogin, adminLogin, investerLogin, getAllUser, forgotPassword, deletUser } = require('../controllers/user')
 
 // Buyer signup route
 userRouter.post('/buyer/signup', buyerSignup);
@@ -21,5 +21,6 @@ userRouter.post('/request',forgotPassword)
 // Investor login route
 userRouter.post('/investor/login', investerLogin);
 userRouter.get('/getAlluser',getAllUser)
+userRouter.delete('/deleteuser/:id',deletUser)
 
 module.exports = userRouter;
