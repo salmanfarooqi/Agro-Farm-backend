@@ -5,6 +5,7 @@ const userRouter = require('./routers/user.js')
 const purchasePlaneRouter = require('./routers/purchasePlane.js')
 const investmentPlaneRouter = require('./routers/investmentPlane.js')
 const productRouter = require('./routers/product.js')
+const dashobardRouter = require('./routers/dashboard.js')
 // const orderRouter = require('./routers/order.js')
 
 
@@ -18,7 +19,9 @@ app.use(userRouter)
 app.use(purchasePlaneRouter)
 app.use(investmentPlaneRouter)
 app.use(productRouter)
-// app.use(orderRouter)
+
+app.use(orderRouter)
+app.use(dashobardRouter)
 
 
 let port=9000
